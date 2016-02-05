@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Penn UTV</title>
+    <style media="screen">
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      p, ul, li, hr, h1, h2, h3, h4, h5 {
+        margin-bottom: 1em;
+      }
+
+      h1, h2, h3, h4, h5 {
+        margin-top: 1.5em;
+        margin-bottom: 16px;
+      }
+
+      h2+h3 {
+        margin-top: 1em;
+      }
+
+      h2 {
+        font-size: 24px;
+        font-style: italic;
+        font-weight: bold;
+      }
+
+      h3 {
+        font-size: 22px;
+        font-weight: normal;
+      }
+
+      hr {
+        margin: 2.5em -1em 1em;
+        border: 1px solid #1c4587;
+      }
+
+      body {
+        font: 16px "Open Sans", Arial, sans-serif;
+        line-height: 1.5em;
+        background: #eee;
+      }
+
+      header {
+        background: white;
+        text-align: center;
+      }
+
+      #logo {
+        margin: 50px 0 30px;
+        height: 200px;
+        width: 397px;
+      }
+
+      #subtitle {
+        display: block;
+        padding: 30px 20px;
+        font-weight: 300;
+        font-size: 34px;
+        background: #a61c00;
+        color: white;
+        margin: 0;
+        line-height: 1.2em;
+      }
+
+      #content {
+        max-width: 960px;
+        padding: 0 20px 20px;
+        margin: 0 auto;
+      }
+
+       ul > li {
+         margin-left: 20px;
+         margin-bottom: 0.5em;
+       }
+
+       #social {
+         width: 960px;
+         margin: 50px auto;
+         text-align: center;
+         height: 70px;
+       }
+       #social > div {
+         width: 50px;
+         float: left;
+       }
+    </style>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,700italic,800,800italic,300,300italic,400italic,600,600italic' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <header>
+      <img id="logo" src="logo.png" alt="Penn UTV - University of Pennsylvania Television" />
+      <h1 id="subtitle"><strong>Penn UTV:</strong> A Community for Video Creators</h1>
+    </header>
+    <div id="content">
+      <h2>What We Do</h2>
+      <p>Penn UTV is a coalition for all undergraduate student groups that produce video. UTV and its member groups share resources such as equipment and some funding, as well as jointly coordinate events, new member recruiting, marketing and promotion. Our goal is to make it as easy as possible for groups to get started producing video and to make these groups more visible on campus.</p>
+
+      <h2>Our Mission</h2>
+      <p>Penn UTV is committed to fostering and promoting student produced video on campus. We believe that video is a powerful and engaging medium of expression in the modern world that should be fully leveraged on campus. UTV is devoted to facilitating both the production and consumption of student-produced video content at Penn by maintaining a community for student groups that produce video to share resources and jointly reach the broader Penn community.</p>
+
+      <h2>Key Activities</h2>
+      <ul>
+        <li>Facilitating regular meetings for representatives from student video groups to discuss their activities and plan joint events and initiatives.</li>
+        <li>Providing production equipment and resources to member groups.</li>
+        <li>Promoting member groups in the Penn community for recruitment and marketing purposes.</li>
+        <li>Jointly organizing community events on behalf of member groups.</li>
+      </ul>
+
+      <div id="social">
+        <div class="fb-page" data-href="https://www.facebook.com/PennUTV13/" data-tabs="timeline" data-width="180" data-height="70" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/PennUTV13/"><a href="https://www.facebook.com/PennUTV13/">Penn UTV</a></blockquote></div></div>
+        <div class="g-ytsubscribe" data-channel="pennutv13" data-layout="full" data-count="default" data-onytevent="onYtEvent"></div>
+      </div>
+
+      <hr>
+
+      <h2>How to Get Involved</h2>
+
+      <h3>New &amp; Existing Video Groups at Penn</h3>
+      <p><strong>Any group of students at Penn whose main focus involves producing video content is welcome to join the UTV community.</strong> Groups can be brand new or already long established at Penn. The only requirement is that you already have a core team of people together - we’ll help you with the rest.</p>
+      <p>We provide a pool of shared equipment, funding, and other resources you may need in the course of producing video. In return, we simply ask that your group actively participate in the community by helping each other where you can, and helping to jointly organize various events on behalf of all of our member groups. Email <a href="mailto:contact@pennutv.com">contact@pennutv.com</a> if your group is interested in joining.</p>
+
+      <h3>Students Interested in Video Production</h3>
+      <p><strong>Individuals who are interested in creating video at Penn are invited to join any existing UTV member group, or create their own group to join UTV with.</strong> We provide resources through our member groups and jointly organize video and media-related events for everyone involved in these groups. Visit PennUTV.com for a listing of member groups and joint info sessions for new members.</p>
+    </div>
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=1697725590466346";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <script src="https://apis.google.com/js/platform.js"></script>
+    <script>
+      function onYtEvent(payload) {
+        if (payload.eventType == 'subscribe') {
+          // Add code to handle subscribe event.
+        } else if (payload.eventType == 'unsubscribe') {
+          // Add code to handle unsubscribe event.
+        }
+        if (window.console) { // for debugging only
+          window.console.log('YT event: ', payload);
+        }
+      }
+    </script>
+  </body>
+</html>
